@@ -2,7 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <head>
-    <title>Chapull Market | {% block title %}{% endblock %}</title>{% load staticfiles %}
+    <title>BarterKings | {% block title %}{% endblock %}</title>{% load staticfiles %}
 	<link href="{{ STATIC_URL }}css/main.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="{{ STATIC_URL }}image/site.ico">
 		<!--[if lt IE 7]>
@@ -24,7 +24,7 @@
 			 	<table width="960" height="40" border="0">
   					<tr>
     					<td width="205" > 
-							<a href="/"><img class="middle" src="{{ STATIC_URL }}image/banner.png" width="205" height="40"></a>	
+							<a href="/"><img class="middle" src="{{ STATIC_URL }}image/barterkings.png" width="205" height="40"></a>	
 						</td>
 	
     					<td width="250" style="vertical-align:top; padding-top:5px;">
@@ -68,9 +68,9 @@
 					{% for u in users|slice:"15" %}
 					&nbsp <a href="{% url 'profile' u.username %}">{{ u.username }}</a>&nbsp|
 					{% endfor %}
-					<br><br> All rights reserverd by <font style="color:#ccc;">® Chapull Market</font>
+					<br><br> All rights reserverd by <font style="color:#ccc;">® BarterKings</font>
 					{% else %}
-					<font style="color:#858585;letter-spacing:3pt; line-height:3;" >Please <a href="/">login</a> for access to content...<br> All rights reserverd by <font style="color:#fff;">® Chapull Market </font></font>
+					<font style="color:#858585;letter-spacing:3pt; line-height:3;" >Please <a href="/">login</a> for access to content...<br> All rights reserverd by <font style="color:#fff;">®Barterkings </font></font>
 				{% endif %}
 				
 			{% endblock %}</center>
